@@ -1,0 +1,41 @@
+.contact-section{
+    display: flex;
+}
+
+.c-left{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.c-left img{
+    margin: auto;
+    height: 550px;
+}
+
+.c-right{
+    flex: 2;
+}
+
+.contact-form{
+    display: flex;
+}
+
+@media only screen and (max-width: 500px){
+    .contact-section{
+        flex-direction: column;
+    }
+
+    .c-right > *{
+        text-align: center;
+    }
+    .c-right button{
+        margin: auto;
+    }
+
+    .c-left img{
+        width: 100%;
+        height: fit-content;
+    }
+}
+

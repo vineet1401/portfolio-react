@@ -1,0 +1,219 @@
+:root {
+  --yellow: #f5c32c;
+  --orange: #fca61f;
+  --gray: #788097;
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+  --orangeCard: rgba(252, 166, 31, 0.45);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+  --black: #000000;
+  --ash-black: #222;
+  --white: #fafafa;
+  --sky: #00ccff;
+  --green: #22dddd;
+  --blue: #1300ff;
+  --dusk: #6600ff;
+  --purple: #9900ff;
+  --pink: #ff0066;
+  --red: #fe0222;
+  --yellow: #ffbb00;
+
+  --background: var(--white);
+  --accent: var(--pink);
+}
+body{
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+
+.button {
+  border-radius: 15px;
+  cursor: pointer;
+  width: max-content;
+  border: none;
+  color: white;
+  font-weight: 700;
+  margin-top: 10px;
+  background-color: var(--orange);
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0px 0px 30px orange;
+  font-size: large;
+  padding: 12px;
+}
+.button:active{
+  scale: 0.9;
+}
+
+.button:hover {
+  background-color: white;
+  border: 2px solid var(--orange);
+  color: black;
+}
+
+.progress-bar {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: var(--orange);
+  transform-origin: 0%;
+}
+
+.home-page {
+    width: 80vw;
+    margin: auto;
+}
+.about-page {
+    width: 80vw;
+    margin: auto;
+}
+.skill-page {
+    width: 80vw;
+    margin: auto;
+}
+.project-page {
+    width: 80vw;
+    margin: auto;
+}
+.contact-page {
+    width: 80vw;
+    margin: auto;
+}
+
+.footer{
+  width: 80vw;
+  margin: auto;
+}
+
+.fork-portfolio {
+  background-color: orange;
+  border-radius: 30px;
+  padding: 30px;
+  display: flex;
+  margin: 50px auto;
+}
+
+.fork-left {
+  flex: 2;
+  color: white;
+  font-family: "Poppins";
+}
+.fork-left h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 0px;
+}
+.fork-left h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0px;
+}
+.fork-left p {
+  margin-bottom: 5px;
+  padding: 0px;
+}
+.fork-left button {
+  padding: 10px;
+  border: none;
+  background: #59D5E0;
+  color: black;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  margin: 10px 0;
+  
+}
+.fork-right {
+  border: 4px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fork-right img {
+  width: 100%;
+  border-radius: 10px;
+  border-spacing: 2px;
+}
+
+footer{
+  display: flex;
+  margin-top: 30px;
+}
+
+footer .footer-left{
+flex: 1;
+padding: 10px;
+font-size: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Poppins";
+}
+footer .footer-right{
+flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer-right *{
+  margin: 0px 5px;
+  padding: 0px;
+}
+/* 
+body{
+  background: #000;
+  color: white;
+} */
+
+.top{
+  display: flex;
+  position: fixed;
+  z-index:30;
+  bottom: 50px;
+  border-radius: 100%;
+  right: 3vw;
+  padding: 0;
+  box-shadow: none;
+  border: 2px solid orange;
+}
+
+.box {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--orange);
+}
+
+
+
+
+@media only screen and (max-width: 500px){
+  .fork-portfolio{
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 15px;
+
+  }
+  footer{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer .footer-left{
+    font-size: 1rem;
+  }
+
+  .App > div{
+    width: 90vw;
+  }
+}

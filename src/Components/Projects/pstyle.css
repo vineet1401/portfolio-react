@@ -1,0 +1,79 @@
+
+
+.swiper-slide img {
+  display: inline-block;
+  width: 100%;
+}
+
+/* CSS for project card container */
+.project-card {
+  background-color: #f0f0f0;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CSS for project details container */
+.project-details {
+  position: absolute;
+  bottom: 0; /* Initially, details are hidden at the bottom */
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease; /* Smooth transition for animation */
+  transform: translateY(150%); /* Initially, details are hidden below */
+}
+
+/* CSS for project title */
+.project-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* CSS for project description */
+.project-description {
+  font-size: 16px;
+}
+
+/* CSS for hover effect */
+.project-card:hover .project-details {
+  transform: translateY(0); /* Slide details up on hover */
+}
+
+.project-git-icon{
+  height: 50px !important;
+  width: 50px !important;
+  background: #ffffff;
+}
+
+.projects{
+  padding: 60px;
+  height: 100%;
+  align-self: center;
+}
+
+.hide{
+  display: none;
+}
+
+
+@media only screen and (max-width: 500px){
+  .projects{
+    padding: 0px;
+    overflow: hidden;
+  }
+
+  .project-card{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
