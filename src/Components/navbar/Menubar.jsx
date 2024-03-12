@@ -98,17 +98,17 @@ function Menu(props) {
               aria-label="open drawer"
               edge="start"
               onClick={handleDrawerToggle}
-              sx={{ mr: 2, display: { sm: "none" }, ...cssProps }}
+              sx={{ mr: 0, display: { sm: "none" }, ...cssProps }}
             >
               <MenuIcon />
             </IconButton>
             <div className="n-left">
-              <div className="n-name">
+              <div>
                 <img className="logo" src={VinLogo} alt="" />
               </div>
-              <span>
+              <div>
                 <Toggle />
-              </span>
+              </div>
             </div>
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
               {navItems.map((item) => (

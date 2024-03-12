@@ -11,7 +11,11 @@
     flex:1;
     align-items: center;
     display: flex;
+    justify-content:flex-start ;
     gap: 2rem;
+}
+.n-left>.n-name{
+    flex: 2;
 }
 
 .menu-names:hover{
@@ -34,8 +38,9 @@
     color: var(--orange);
 }
 
+
 .logo{
-    margin: auto;
+    /* margin: auto; */
     height: 9vh;
 }
 
@@ -103,6 +108,10 @@
 
     .logo{
         width:100%
+    }
+
+    .n-left{
+        gap: 0.4rem;
     }
   
     .n-wrapper {
