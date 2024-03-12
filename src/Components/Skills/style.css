@@ -22,7 +22,7 @@
   flex-wrap: wrap;
   padding: 10px;
   border: 5px solid orange;
-  height: 55vh;
+  height: max-content ;
   border-top: none;
   justify-content: center;
   background-color: white;
