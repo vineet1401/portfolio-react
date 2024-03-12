@@ -27,7 +27,7 @@ const Contact = () => {
       <span className="shadow-4"></span>
       <div className="contact-section">
         <div className="c-left">
-          <img src={windowWidth < 600 ? contactmobile : contactlaptop} alt="" />
+          <img src={windowWidth < 700 ? contactmobile : contactlaptop} alt="" />
         </div>
         <div className="c-right">
           <Form />
