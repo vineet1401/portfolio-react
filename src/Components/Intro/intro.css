@@ -164,7 +164,7 @@
   }
 
   .intro-img {
-    height: 380px;
+    height: min-content;
   }
   .i-name {
     gap: 10px;
