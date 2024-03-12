@@ -5,8 +5,9 @@ import Form from "./Form.jsx";
 import contactlaptop from "../../img/contact.png";
 import contactmobile from "../../img/contact-3d.png";
 
-
 const Contact = () => {
+
+
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {

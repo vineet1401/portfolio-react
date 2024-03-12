@@ -10,6 +10,8 @@ import { motion, useScroll } from "framer-motion";
 import { themeContext } from './Context.jsx';
 import { useContext } from 'react';
 
+import {transitions, positions, Provider } from "react-alert";
+import AlertTemplate from "react-alert-template-basic";
 
 
 
@@ -19,35 +21,46 @@ function App() {
   const theme = useContext(themeContext)
   const darkmode = theme.state.darkmode;
 
+  const options = {
+    timeout: 3000,
+    position: positions.TOP_CENTER,
+    offset: '30px',
+    // you can also just use 'scale'
+    transition: transitions.SCALE
+  };
 
   return (
-    <div className="App"
-      style={{
-        background: darkmode ? "black" : "white",
-        color: darkmode ? "white" : "black"
-
-      }}>
+    <>
+      <Provider template={AlertTemplate} {...options}>
       <motion.div className="progress-bar" style={{ scaleX: scrollYProgress }} />
-      <div id='home' className='home-page'>
-        <Navbar />
-        <Intro />
+      <div className="App"
+        style={{
+          background: darkmode ? "black" : "white",
+          color: darkmode ? "white" : "black"
+
+        }}>
+        <div id='home' className='home-page'>
+          <Navbar />
+          <Intro />
+        </div>
+        <div id='about' className='about-page'>
+          <About />
+        </div>
+        <div id='skill' className='skill-page'>
+          <Skills />
+        </div>
+        <div id='project' className='project-page'>
+          <Project />
+        </div>
+        <div id='contact' className='contact-page'>
+          <Contact />
+        </div>
+        <div id='footer' className='footer'>
+          <Footer />
+        </div>
       </div>
-      <div id='about' className='about-page'>
-        <About />
-      </div>
-      <div id='skill' className='skill-page'>
-        <Skills />
-      </div>
-      <div id='project' className='project-page'>
-        <Project />
-      </div>
-      <div id='contact' className='contact-page'>
-        <Contact />
-      </div>
-      <div id='footer' className='footer'>
-        <Footer />
-      </div>
-    </div>
+      </Provider>
+    </>
   );
 }
 
