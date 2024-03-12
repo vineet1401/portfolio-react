@@ -180,6 +180,9 @@
   .intro-icon {
     display: flex;
   }
+  .intro-img{
+    
+  }
 
   .intro-img > img {
     width: 100%;
