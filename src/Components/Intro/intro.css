@@ -154,6 +154,9 @@
   .head {
     font-size: 1rem;
   }
+  .typewriter{
+    flex-direction: column;
+  }
 
   .intro {
     flex-direction: column;
@@ -179,43 +182,50 @@
   }
 
   .intro-img > img {
-    scale: 0.7;
+    width: 100%;
   }
 
   .floating-div {
-    scale: 0.5;
+    scale: 0.7;
+    display: flex;
   }
 
   .fd1 {
     position: relative;
     z-index: 10;
-    top: -280px;
-    left: 15px;
+    top: -40vh;
+    left: 48vw;
   }
   .fd2 {
     position: relative;
     z-index: 10;
-    top: -250px;
-    left: 230px;
+    top: -20vh;
+    left: 20vw;
   }
   .fd3 {
     position: relative;
     z-index: 10;
     scale: 0.4;
-    top: -500px;
-    left: 280px;
+    top: -55vh;
+    left: 0;
     background-color: rgba(33, 133, 220, 0);
   }
 }
 
 @media only screen and (max-width: 350px) {
+
   .intro-img > img {
-    scale: 0.6;
+    padding: 0;
+    margin: 0;
+  }
+  .intro-img > img {
+    scale: 0.9;
   }
   .i-left {
     width: 100%;
     padding: 10px;
   }
+
 
   .intro-icon img {
     height: 30px;
@@ -225,20 +235,20 @@
   }
 
   .floating-div {
-    scale: 0.5;
+    scale: 0.4;
   }
 
   .fd1 {
-    top: -400px;
-    left: 80px;
+    top: -35vh;
+    left: 40vw;
   }
   .fd2 {
-    top: -250px;
-    left: 170px;
+    top: -25vh;
+    left: 20vw;
   }
   .fd3 {
-    scale: 0.4;
-    top: -500px;
-    left: 270px;
+    scale: 0.3;
+    top: -55vh;
+    left: 0;
   }
 }

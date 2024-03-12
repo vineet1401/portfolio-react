@@ -11,6 +11,8 @@ import arrow from "../../img/arrow.gif";
 import crown from "../../img/crown.png";
 import glassemoji from "../../img/glassesimoji.png";
 import { Link } from "react-scroll";
+import Typewriter from "typewriter-effect";
+import profile from  "../../img/profile-pic.png"
 
 const Intro = () => {
   return (
@@ -28,7 +30,16 @@ const Intro = () => {
               <span>Hi, I am</span>
             </span>
             <span>Vineet Sakpal</span>
-            <span>Full Stack MERN Developer.</span>
+            <span className="typewriter" style={{display:"flex",  gap:"0.5rem"}}> 
+              I am into 
+              <Typewriter
+                options={{
+                  strings: ["Frontend Development", "Backend Development", "MERN Stack Development", "Python Programminf"],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </span>
           </div>
           <div className="i-hire-me">
             <button type="button" className="button">
@@ -70,7 +81,10 @@ const Intro = () => {
           </div>
         </div>
       </div>
-      <Link to="home" smooth duration={500} className="button top" > <img style={{borderRadius:"100%"}} src={arrow} alt="" /></Link>
+      <Link to="home" smooth duration={500} className="button top">
+        {" "}
+        <img style={{ borderRadius: "100%" }} src={arrow} alt="" />
+      </Link>
     </>
   );
 };
