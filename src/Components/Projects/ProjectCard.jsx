@@ -7,16 +7,16 @@ import { CardActionArea } from "@mui/material";
 
 export default function ActionAreaCard({item}) {
   return (
-    <Card sx={{ width: "400px" , height:"400px" }}>
+    <Card sx={{ width: "400px" , height:"400px", display:"flex", flexDirection:"column", justifyContent:"space-evenly"}}>
       <CardActionArea>
         <CardMedia
           component="img"
-          height="250"
-          src="https://www.oberlo.com/media/1603954923-image23-1.png?w=1824&fit=max"
+          width={"100%"}
+          src={item.icon}
           alt={item.name}
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom variant="h5" component="div" sx={{fontWeight: "600"}}>
             {item.name}
           </Typography>
           <Typography variant="h6" color="text.primary">
