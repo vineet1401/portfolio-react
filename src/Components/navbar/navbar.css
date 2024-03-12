@@ -100,8 +100,12 @@
       width: 100vw;
       overflow-x: hidden;
     }
+
+    .logo{
+        width:100%
+    }
   
-    .n-wrapper, .n-left {
+    .n-wrapper {
       display: flex;
       width: 100%;
       justify-content: center;
