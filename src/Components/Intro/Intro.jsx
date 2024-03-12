@@ -12,7 +12,6 @@ import crown from "../../img/crown.png";
 import glassemoji from "../../img/glassesimoji.png";
 import { Link } from "react-scroll";
 import Typewriter from "typewriter-effect";
-import profile from  "../../img/profile-pic.png"
 
 const Intro = () => {
   return (
