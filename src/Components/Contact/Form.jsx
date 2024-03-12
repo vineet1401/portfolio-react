@@ -4,7 +4,6 @@ import { TextField, Typography, Box } from "@mui/material";
 import emailjs from "@emailjs/browser";
 import { useAlert } from "react-alert";
 
-import { toast, ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 
 export default function ContactForm() {
@@ -114,18 +113,6 @@ export default function ContactForm() {
           <button onClick={sendEmail} className="button" type="submit">
             Submit
           </button>
-          <ToastContainer
-            position="top-center"
-            autoClose={2000}
-            hideProgressBar={false}
-            newestOnTop={false}
-            rtl={false}
-            pauseOnFocusLoss={false}
-            draggable={false}
-            pauseOnHover={false}
-            theme="light"
-            transition= "Bounce"
-            />
         </form>
       </Box>
     </Box>
