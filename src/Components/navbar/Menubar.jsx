@@ -98,7 +98,7 @@ function Menu(props) {
               aria-label="open drawer"
               edge="start"
               onClick={handleDrawerToggle}
-              sx={{ mr: 0, display: { sm: "none" }, ...cssProps }}
+              sx={{ mr: 0, display: { sm: "block",md:"none" }, ...cssProps }}
             >
               <MenuIcon />
             </IconButton>
@@ -110,7 +110,7 @@ function Menu(props) {
                 <Toggle />
               </div>
             </div>
-            <Box sx={{ display: { xs: "none", sm: "block" } }}>
+            <Box sx={{ display: { xs: "none", md: "block" } }}>
               {navItems.map((item) => (
                 <Link to={item} smooth duration={500}>
                   <Button
@@ -144,7 +144,7 @@ function Menu(props) {
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
-            display: { xs: "block", sm: "none" },
+            display: { xs: "block", sm: "block" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,

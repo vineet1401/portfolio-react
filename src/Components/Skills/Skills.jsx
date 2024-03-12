@@ -33,7 +33,7 @@ const Skills = () => {
     <>
     <span className="shadow-2"></span>
       <h1 className="head">MY SKILLS</h1>
-      <span className="shadow-1">.</span>
+      <span className="shadow-1"></span>
         <div className="skill-box">
           <div className="SkillButton">
             <ul>
@@ -42,6 +42,7 @@ const Skills = () => {
                   <li
                     className={item === selectedTab ? "active" : ""}
                     key={index}
+                    style={{listStyle:"none"}}
                   >
                     <button key={item} onClick={() => filterData(item)}>
                       {item.toUpperCase()}

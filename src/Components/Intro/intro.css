@@ -87,20 +87,21 @@
 .fd1 {
   position: absolute;
   z-index: 10;
-  top: 250px;
-  right: 580px;
+  top: 20vh;
+  right: 40vw;
 }
 .fd2 {
   position: absolute;
   z-index: 10;
-  top: 550px;
-  right: 380px;
+  top: 70vh;
+  right: 20vw;
 }
 .fd3 {
   position: absolute;
   z-index: 10;
-  top: 450px;
-  right: 150px;
+  top: 30vh;
+  scale: 0.8;
+  right: 15vw;
   background-color: rgba(33, 133, 220, 0);
 }
 
@@ -119,7 +120,37 @@
   transform: scale(1.1);
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1100px){
+  .button{
+    padding: 0;
+    font-size: 1rem;
+  }
+.intro{
+  padding: 0px;
+}
+.i-left{
+  gap: 0.5rem;
+  flex: 1;
+}
+.vineet-img{
+  width: 100%;
+}
+.floating-div{
+  display: none;
+}
+.i-name > span {
+  font-size: 150%;
+}
+.i-name > span:nth-child(2){
+  font-size: 220%;
+}
+.intro-icon  img{
+  width: 40px;
+  height: 40px;
+}
+}
+
+@media only screen and (max-width: 600px) {
   .head {
     font-size: 1rem;
   }

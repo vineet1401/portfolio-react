@@ -1,3 +1,4 @@
+
 :root {
   --yellow: #f5c32c;
   --orange: #fca61f;
@@ -195,7 +196,7 @@ body{
 
 
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 600px){
   .fork-portfolio{
     flex-direction: column;
     text-align: center;

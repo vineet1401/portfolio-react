@@ -39,7 +39,7 @@ export default function App() {
 
   return (
     <>
-      <div className={windowWidth <= 500 ? "hide" : ""}>
+      <div className={windowWidth <= 800 ? "hide" : ""}>
         <Swiper
           effect={"coverflow"}
           grabCursor={true}
@@ -83,7 +83,7 @@ export default function App() {
         </Swiper>
       </div>
 
-      <div className={windowWidth > 500 ? "hide" : ""}>
+      <div className={windowWidth > 800 ? "hide" : ""}>
         <Swiper
           effect={"flip"}
           grabCursor={true}

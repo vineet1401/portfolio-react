@@ -25,8 +25,6 @@
   height: max-content ;
   border-top: none;
   justify-content: center;
-  background-color: white;
-  color: black;
 }
 
 .SkillButton{
@@ -62,7 +60,6 @@
   align-items: center;
   justify-content: center;
   min-width: 0;
-  user-select: none;
   background: transparent;
 }
 
@@ -79,7 +76,6 @@
   width: max-content;
   height: max-content;
   font-size: 1.3rem;
-
   margin: 15px;
   padding: 10px;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
@@ -106,8 +102,6 @@
   display: inline-block;
   margin: 0px;
   padding: 0px;
-  width: 20vw;
-  height: 1px;
   box-shadow:1000px 400px 500px 20px rgb(0, 255, 47) ;
 }
 
@@ -115,28 +109,22 @@
   margin: 0px;
   padding: 0px;
   display: inline-block;
-  width: 20vw;
-  height: 1px;
   box-shadow:10px 150px 200px 20px rgb(255, 1, 1) ;
 }
 .shadow-3{
   margin: 0px;
   padding: 0px;
   display: inline-block;
-  width: 20vw;
-  height: 1px;
   box-shadow:10px 150px 200px 20px rgb(255, 179, 0) ;
 }
 .shadow-4{
   display: inline-block;
   margin: 0px;
   padding: 0px;
-  width: 20vw;
-  height: 1px;
   box-shadow:1000px 50px 600px 8px rgb(0, 255, 47) ;
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 900px){
   .skill-box{
     width: 100%;
   }
