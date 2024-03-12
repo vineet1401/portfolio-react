@@ -1,13 +1,13 @@
-import {  useState } from "react";
+import { useState } from "react";
 import { TextField, Typography, Box } from "@mui/material";
 
 import emailjs from "@emailjs/browser";
-import { useAlert } from "react-alert";
 
-import "react-toastify/dist/ReactToastify.css";
+import Alert from "@mui/material/Alert";
+import Stack from "@mui/material/Stack";
+
 
 export default function ContactForm() {
-  const alert = useAlert();
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -32,14 +32,31 @@ export default function ContactForm() {
     setEmail("");
     setMessage("");
   };
+  const [errorType, setErrorType] = useState({
+    error: false,
+    type: "",
+    message: "",
+  });
 
-  const sendEmail = async(e) => {
+  const handleClose = () => {
+    setErrorType({ error: false, type: "", severity: "", message: "" });
+  };
+
+  const sendEmail = async (e) => {
     e.preventDefault(); // prevents the page from reloading when you hit “Send”
-    try{
-      if(name === "" || email === "" || message === ""){
-        alert.error("All field Required")
-      }
-      else{
+    try {
+      if (name === "" || email === "" || message === "") {
+        setErrorType({
+          error: true,
+          severity: "error",
+          type: "#FF033E",
+          message: "All field Required",
+        });
+        setTimeout(() => {
+          setErrorType({ error: false, type: "", severity: "", message: "" });
+        }, 3000);
+        // alert.error("All field Required");
+      } else {
         await emailjs.send(
           "service_2rgcf7o",
           "template_aso6y88",
@@ -51,12 +68,28 @@ export default function ContactForm() {
             reply_to: "cyrax1401@gmail.com",
           },
           "ffkxYVV5nIPb0FHBe"
-        )
-        alert.success("Thank You, I will get back to you soon");
+        );
+        setErrorType({
+          error: true,
+          severity: "success",
+          type: "#03C03C",
+          message: "Thank You, I will get back to you soon",
+        });
         resetForm();
+        setTimeout(() => {
+          setErrorType({ error: false, type: "", severity: "", message: "" });
+        }, 3000);
       }
-    }catch(error) {
-      alert.error("Oops! Try again");
+    } catch (error) {
+      setErrorType({
+        error: true,
+        severity: "error",
+        type: "#FF033E",
+        message: "Oops! Try again",
+      });
+      setTimeout(() => {
+        setErrorType({ error: false, type: "", severity: "", message: "" });
+      }, 3000);
     }
   };
 
@@ -113,6 +146,26 @@ export default function ContactForm() {
           <button onClick={sendEmail} className="button" type="submit">
             Submit
           </button>
+          {errorType.error && (
+            <Stack spacing={2}>
+              <Alert
+              variant="filled"
+                sx={{
+                  fontSize:"1.2rem",
+                  fontWeight:"600",
+                  width: "50vw",
+                  position: "fixed",
+                  top: "10vh",
+                  left: "25vw",
+                  zIndex: "50",
+                }}
+                severity={errorType.severity}
+                onClose={handleClose}
+              >
+                {errorType.message}
+              </Alert>
+            </Stack>
+          )}
         </form>
       </Box>
     </Box>

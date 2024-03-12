@@ -10,10 +10,6 @@ import { motion, useScroll } from "framer-motion";
 import { themeContext } from './Context.jsx';
 import { useContext } from 'react';
 
-import {transitions, positions, Provider } from "react-alert";
-import AlertTemplate from "react-alert-template-basic";
-
-
 
 function App() {
 
@@ -21,17 +17,9 @@ function App() {
   const theme = useContext(themeContext)
   const darkmode = theme.state.darkmode;
 
-  const options = {
-    timeout: 3000,
-    position: positions.TOP_CENTER,
-    offset: '30px',
-    // you can also just use 'scale'
-    transition: transitions.SCALE
-  };
 
   return (
     <>
-      <Provider template={AlertTemplate} {...options}>
       <motion.div className="progress-bar" style={{ scaleX: scrollYProgress }} />
       <div className="App"
         style={{
@@ -59,7 +47,6 @@ function App() {
           <Footer />
         </div>
       </div>
-      </Provider>
     </>
   );
 }

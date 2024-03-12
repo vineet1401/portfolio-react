@@ -28,9 +28,6 @@ const navItems = ["home", "about", "skill", "project", "contact"];
 
 function HideOnScroll(props) {
   const { children, window } = props;
-  // Note that you normally won't need to set the window ref as useScrollTrigger
-  // will default to window.
-  // This is only being set here because the demo is in an iframe.
   const trigger = useScrollTrigger({
     target: window ? window() : undefined,
   });
@@ -72,7 +69,7 @@ function Menu(props) {
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
+            <ListItemButton  sx={{ textAlign: "center" }}>
               <Link to={item} smooth duration={500}>
                 <ListItemText primary={item.toUpperCase()} />
               </Link>
