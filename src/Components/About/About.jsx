@@ -3,6 +3,7 @@ import React from "react";
 import "./About.css";
 
 import Boy from "../../img/about-boy.png";
+import { Link } from "react-scroll";
 
 const About = () => {
   return (
@@ -49,12 +50,18 @@ const About = () => {
           <h1 className="abt-head">ABOUT ME</h1>
           <p>
             Hey there! I'm a 3rd year Computer Engineering undergrad immersing
-            myself in the dynamic worlds of MERN Stack & ML!<br/> 💻 From MongoDB to
+            myself in the dynamic worlds of MERN Stack & ML! From MongoDB to
             React, Node.js to ML algorithms, every line of code I write is a
-            step towards innovation. 🌐 Passionate about building scalable
-            solutions and creating meaningful impact.<br/> 🌟 I'm constantly learning
-            and coding my way through challenges, on a journey to redefine
-            possibilities.<br/> 🚀 <a href="">Let's connect and grow together!</a>
+            step towards innovation. Passionate about building scalable
+            solutions and creating meaningful impact.
+            <br /> I'm constantly learning and coding my way through challenges,
+            on a journey to redefine possibilities.
+            <br />
+            <span style={{textAlign:"center", display:"block", marginTop:"10px", fontSize:"1.7rem", color:"purple"}}>
+              <Link to="contact" smooth duration={500}>
+                🚀LET'S CONNECT & GROW TOGETHER 🚀
+              </Link>
+            </span>
           </p>
           <a
             className="button"

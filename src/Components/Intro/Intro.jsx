@@ -51,9 +51,7 @@ const Intro = () => {
           </div>
           <div className="i-hire-me">
             <button type="button" className="button">
-              <Link to="contact" smooth duration={500}>
-                Contact Me
-              </Link>
+
             </button>
           </div>
           <div className="intro-icon">

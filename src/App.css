@@ -27,6 +27,12 @@ body{
   overflow-x: hidden;
 }
 
+hr{
+  width: 90vw;
+  border: 2px solid var(--orange);
+  margin: 10vh auto;
+}
+
 
 .button {
   border-radius: 15px;
@@ -218,3 +224,4 @@ body{
     width: 90vw;
   }
 }
+

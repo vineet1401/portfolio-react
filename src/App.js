@@ -38,15 +38,19 @@ function App() {
           <Navbar />
           <Intro />
         </div>
+        <hr/>
         <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-back" id='about' className='about-page'>
           <About />
         </div>
+        <hr/>
         <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-back" id='skill' className='skill-page'>
           <Skills />
         </div>  
+        <hr/>
         <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-back" id='project' className='project-page'>
           <Project />
         </div>
+        <hr/>
         <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-back" id='contact' className='contact-page'>
           <Contact />
         </div>
