@@ -160,11 +160,12 @@
 
   .intro {
     flex-direction: column;
-    height: max-content;
+    height: min-content;
   }
 
   .intro-img {
-    height: min-content;
+    height: 100vw;
+    margin-top: 50px;
   }
   .i-name {
     gap: 10px;
@@ -180,9 +181,14 @@
   .intro-icon {
     display: flex;
   }
-  .intro-img{
-    
+  .i-right {
+    flex: 1;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
   }
+  
+
 
   .intro-img > img {
     width: 100%;
