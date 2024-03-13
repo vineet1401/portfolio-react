@@ -34,7 +34,7 @@ const Skills = () => {
     <span className="shadow-2"></span>
       <h1 className="head">MY SKILLS</h1>
       <span className="shadow-1"></span>
-        <div className="skill-box">
+        <div className="skill-box"  data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out">
           <div className="SkillButton">
             <ul>
               {DataItem.map((item, index) => {

@@ -4,7 +4,7 @@ import heart from "../img/heart.gif";
 const Footer = () => {
   return (
     <>
-      <div className="fork-portfolio">
+      <div className="fork-portfolio"  data-aos="zoom-out" data-aos-duration="1000" data-aos-easing="ease-in-out-back">
         <div className="fork-left">
           <h1>
             Loved this <span style={{ color: "#59D5E0" }}>Portfolio?</span>
@@ -14,7 +14,7 @@ const Footer = () => {
             Fork this template on GitHub start building your own portfolio
             website.
           </p>
-          <button><a style={{textDecoration:"none", color:"navy"}} href="https://github.com/vineet1401/react-portfolio.git">Fork Now</a></button>
+          <button><a style={{textDecoration:"none", color:"navy"}} href="https://github.com/vineet1401/portfolio-react.git">Fork Now</a></button>
         </div>
         <div className="fork-right">
           <img src={portfolio} alt="" />

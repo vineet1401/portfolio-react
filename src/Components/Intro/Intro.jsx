@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React from "react";
+import React, { useEffect } from "react";
 import "./intro.css";
 import Github from "../../img/github.png";
 import Boy from "../../img/bg-vineet.png";
@@ -13,11 +13,20 @@ import glassemoji from "../../img/glassesimoji.png";
 import { Link } from "react-scroll";
 import Typewriter from "typewriter-effect";
 
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Intro = () => {
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   return (
     <>
       <div className="intro">
-        <div className="i-left">
+        <div className="i-left" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out">
           <div className="i-name">
             <span style={{ display: "flex", gap: "5px", alignItems: "center" }}>
               {" "}

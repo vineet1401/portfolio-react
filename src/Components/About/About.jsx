@@ -1,29 +1,67 @@
 import React from "react";
-import Frames from "./frames/Frames.jsx";
+// import Frames from "./frames/Frames.jsx";
 import "./About.css";
+
+import Boy from "../../img/about-boy.png";
 
 const About = () => {
   return (
     <>
-      <h1 className="abt-head">ABOUT ME</h1>
       <div className="about">
-        <div className="about-left">
-          {/* <img src={MyAvtaar} alt="" /> */}
-          <Frames emoji={"https://img.icons8.com/nolan/96/google-code.png"} heading={"Web Developer"} Desc={"Design, code, and maintain websites for optimal user experience."} />
+        <div
+          className="about-left"
+          data-aos="zoom-in-right"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          {/* <Frames emoji={"https://img.icons8.com/nolan/96/google-code.png"} heading={"Web Developer"} Desc={"Design, code, and maintain websites for optimal user experience."} />
           <Frames emoji={"https://img.icons8.com/nolan/96/windows10-personalization.png"} heading={"UI/UX Design"} Desc={"Design intuitive interfaces for seamless user interactions."} />
-          <Frames emoji={"https://img.icons8.com/nolan/96/critical-thinking.png"} heading={"AI/ML"} Desc={"Developing AI/ML models to solve complex problems efficiently and effectively."} />
+          <Frames emoji={"https://img.icons8.com/nolan/96/critical-thinking.png"} heading={"AI/ML"} Desc={"Developing AI/ML models to solve complex problems efficiently and effectively."} /> */}
+          <img
+            style={{ position: "relative", zIndex: "20", width: "100%" }}
+            src={Boy}
+            alt=""
+          />
+          <div
+            style={{
+              background: "orange",
+              height: "100%",
+              width: "50%",
+              zIndex: "10",
+              position: "absolute",
+            }}
+          ></div>
+          <div
+            style={{
+              height: "100%",
+              width: "50%",
+              zIndex: "10",
+              position: "absolute",
+            }}
+          ></div>
         </div>
-        <div className="about-right">
+        <div
+          className="about-right"
+          data-aos="zoom-in-left"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          <h1 className="abt-head">ABOUT ME</h1>
           <p>
-            Proficient in developing responsive and visually appealing user
-            interfaces using HTML, CSS, and JavaScript during a web developer
-            internship. Hands-on experience in server-side scripting with
-            Node.js and Express.js, actively contributing to the creation and
-            maintenance of robust and scalable web applications. Strong
-            background in database management, utilizing MySQL and MongoDB.
-            Demonstrated expertise in data modeling and storage solutions.
+            Hey there! I'm a 3rd year Computer Engineering undergrad immersing
+            myself in the dynamic worlds of MERN Stack & ML!<br/> 💻 From MongoDB to
+            React, Node.js to ML algorithms, every line of code I write is a
+            step towards innovation. 🌐 Passionate about building scalable
+            solutions and creating meaningful impact.<br/> 🌟 I'm constantly learning
+            and coding my way through challenges, on a journey to redefine
+            possibilities.<br/> 🚀 <a href="">Let's connect and grow together!</a>
           </p>
-          <a className="button" href="https://drive.google.com/file/d/1xGXVhR3RRMzaoZ4FHVDa8J4MhR-IRPTA/view?usp=drive_link">Download Resume</a>
+          <a
+            className="button"
+            href="https://drive.google.com/file/d/1xGXVhR3RRMzaoZ4FHVDa8J4MhR-IRPTA/view?usp=drive_link"
+          >
+            Download Resume
+          </a>
         </div>
       </div>
     </>

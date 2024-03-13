@@ -30,7 +30,7 @@ const Contact = () => {
         <div className="c-left">
           <img src={windowWidth < 700 ? contactmobile : contactlaptop} alt="" />
         </div>
-        <div className="c-right">
+        <div className="c-right" data-aos="fade-up-left" data-aos-duration="1000" data-aos-easing="ease-in-out">
           <Form />
         </div>
       </div>

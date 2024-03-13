@@ -8,10 +8,17 @@ import Footer from "./Components/Footer.jsx"
 import "./App.css"
 import { motion, useScroll } from "framer-motion";
 import { themeContext } from './Context.jsx';
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
 
   const { scrollYProgress } = useScroll();
   const theme = useContext(themeContext)
@@ -27,20 +34,20 @@ function App() {
           color: darkmode ? "white" : "black"
 
         }}>
-        <div id='home' className='home-page'>
+        <div id='home' data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-back" className='home-page'>
           <Navbar />
           <Intro />
         </div>
-        <div id='about' className='about-page'>
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-back" id='about' className='about-page'>
           <About />
         </div>
-        <div id='skill' className='skill-page'>
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-back" id='skill' className='skill-page'>
           <Skills />
-        </div>
-        <div id='project' className='project-page'>
+        </div>  
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-back" id='project' className='project-page'>
           <Project />
         </div>
-        <div id='contact' className='contact-page'>
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-back" id='contact' className='contact-page'>
           <Contact />
         </div>
         <div id='footer' className='footer'>
