@@ -15,9 +15,6 @@ const About = () => {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
-          {/* <Frames emoji={"https://img.icons8.com/nolan/96/google-code.png"} heading={"Web Developer"} Desc={"Design, code, and maintain websites for optimal user experience."} />
-          <Frames emoji={"https://img.icons8.com/nolan/96/windows10-personalization.png"} heading={"UI/UX Design"} Desc={"Design intuitive interfaces for seamless user interactions."} />
-          <Frames emoji={"https://img.icons8.com/nolan/96/critical-thinking.png"} heading={"AI/ML"} Desc={"Developing AI/ML models to solve complex problems efficiently and effectively."} /> */}
           <img
             style={{ position: "relative", zIndex: "20", width: "100%" }}
             src={Boy}

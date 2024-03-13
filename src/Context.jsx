@@ -1,9 +1,16 @@
 import React, { useReducer } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
 // Create a new context for managing the toggle state
 export const themeContext = React.createContext();
 
-const initialState = {darkmode : false}
+
+// Function to generate unique IDs
+function generateId() {
+  return uuidv4();
+}
+
+const initialState = {darkmode : false, generateId:generateId}
 
 const themeReducer = (state, action) =>{
     switch(action.type){

@@ -105,11 +105,6 @@ const Data = [
         "icon": "https://img.icons8.com/ios-glyphs/90/github.png"
     },
     {
-        "name": "Google",
-        "type": "Other",
-        "icon": "https://img.icons8.com/color/96/google-logo.png"
-    },
-    {
         "name": "Postman",
         "type": "Other",
         "icon": "https://img.icons8.com/dusk/64/postman-api.png"

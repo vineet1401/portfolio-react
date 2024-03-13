@@ -2,9 +2,9 @@ import React from 'react'
 
 const SkillCard = ({ Skill }) => {
     return (
-        Skill.map((items) => {
+        Skill.map((items, index) => {
             return (
-                <div className="card">
+                <div key={index} className="card">
                     <img className='Skillicon' src={items.icon} alt={items.name} />
                     <div className="Skillname">{items.name}</div>
                 </div>

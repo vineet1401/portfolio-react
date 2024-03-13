@@ -131,6 +131,8 @@
 .i-left{
   gap: 0.5rem;
   flex: 1;
+  padding: 10px;
+  width: 90%;
 }
 .vineet-img{
   width: 100%;
@@ -156,6 +158,10 @@
   }
   .typewriter{
     flex-direction: column;
+  }
+  .i-left{
+    padding: 0px;
+    width: 80%;
   }
 
   .intro {

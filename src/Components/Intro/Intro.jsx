@@ -13,20 +13,23 @@ import glassemoji from "../../img/glassesimoji.png";
 import { Link } from "react-scroll";
 import Typewriter from "typewriter-effect";
 
-
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Intro = () => {
-
   useEffect(() => {
     AOS.init();
-  }, [])
+  }, []);
 
   return (
     <>
       <div className="intro">
-        <div className="i-left" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out">
+        <div
+          className="i-left"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <div className="i-name">
             <span style={{ display: "flex", gap: "5px", alignItems: "center" }}>
               {" "}
@@ -38,21 +41,33 @@ const Intro = () => {
               <span>Hi, I am</span>
             </span>
             <span>Vineet Sakpal</span>
-            <span className="typewriter" style={{display:"flex",  gap:"0.5rem"}}> 
-              I am into 
-              <Typewriter
-                options={{
-                  strings: ["Frontend Development", "Backend Development", "MERN Stack Development", "Python Programminf"],
-                  autoStart: true,
-                  loop: true,
-                }}
-              />
+            <span
+              className="typewriter"
+              style={{ display: "flex", gap: "0.5rem" }}
+            >
+              I am into
+              <span style={{ color: "#6600ff", fontWeight: "600" }}>
+                <Typewriter
+                  options={{
+                    strings: [
+                      "Frontend Development",
+                      "Backend Development",
+                      "MERN Stack Development",
+                      "Python Programming",
+                    ],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+              </span>
             </span>
           </div>
           <div className="i-hire-me">
-            <button type="button" className="button">
-
-            </button>
+            <Link smooth duration={500} to="contact">
+              <button type="button" className="button">
+                Contact Me
+              </button>
+            </Link>
           </div>
           <div className="intro-icon">
             <a href="https://github.com/vineet1401">

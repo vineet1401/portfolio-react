@@ -47,7 +47,6 @@ HideOnScroll.propTypes = {
 function Menu(props) {
   const theme = useContext(themeContext);
   const darkmode = theme.state.darkmode;
-
   const cssProps = {
     background: darkmode ? "black" : "white",
     color: darkmode ? "white" : "black",
@@ -80,12 +79,13 @@ function Menu(props) {
     </Box>
   );
 
+
+
   const container =
     window !== undefined ? () => window().document.body : undefined;
 
   return (
     <>
-        {/* // <Box sx={{ display: "flex" }}> */}
       <CssBaseline />
       <HideOnScroll {...props}>
         <AppBar sx={{ ...cssProps, backgroundColor: "transparent" }}>
@@ -109,9 +109,8 @@ function Menu(props) {
             </div>
             <Box sx={{ display: { xs: "none", md: "block" } }}>
               {navItems.map((item) => (
-                <Link to={item} smooth duration={500}>
+                <Link key={item} to={item} smooth duration={500}>
                   <Button
-                    key={item}
                     sx={{
                       mx: "10px",
                       ...cssProps,
@@ -151,16 +150,11 @@ function Menu(props) {
           {drawer}
         </Drawer>
       </nav>
-    {/* // </Box> */}
     </>
   );
 }
 
 Menu.propTypes = {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
   window: PropTypes.func,
 };
 

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-// Import Swiper React c,omponents
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -58,20 +57,22 @@ export default function App() {
         >
           {Data.map((item, index) => {
             return (
-              <SwiperSlide>
-                <div key={index} className="project-card">
+              <SwiperSlide key={index}>
+                <div  className="project-card">
                   <ActionAreaCard item={item} />
                   <div className="project-details">
                     <a
                       href={item.link}
                       target="blank"
                       title="Project Github Link"
+                      style={{textDecoration:"none", color:"white", display:"flex", alignItems:"center", gap:"10px"}}
                     >
                       <img
                         className="project-git-icon"
                         src="https://img.icons8.com/ios-glyphs/90/github.png"
                         alt=""
                       />
+                      <span>Go to Github Repo</span>
                     </a>
                     <h1 className="project-title">{item.name}</h1>
                     <p className="project-description">{item.description}</p>
@@ -94,8 +95,8 @@ export default function App() {
         >
           {Data.map((item, index) => {
             return (
-              <SwiperSlide>
-                <div key={index} className="project-card">
+              <SwiperSlide key={index} >
+                <div className="project-card">
                   <ActionAreaCard item={item} />
                   <div className="project-details">
                     <a

@@ -55,7 +55,6 @@ export default function ContactForm() {
         setTimeout(() => {
           setErrorType({ error: false, type: "", severity: "", message: "" });
         }, 3000);
-        // alert.error("All field Required");
       } else {
         await emailjs.send(
           "service_2rgcf7o",
