@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import "./intro.css";
 import Github from "../../img/github.png";
-import Boy from "../../img/bg-vineet.png";
+import Boy from "../../img/bg-z.png";
 import LinkedIn from "../../img/linkedin.png";
 import Mail from "../../img/email.png";
 import Leetcode from "../../img/leetcode.png";

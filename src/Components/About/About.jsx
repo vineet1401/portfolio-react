@@ -62,8 +62,7 @@ const About = () => {
           </p>
           <a
             className="button"
-            href="https://drive.google.com/file/d/1xGXVhR3RRMzaoZ4FHVDa8J4MhR-IRPTA/view?usp=drive_link"
-          >
+            href="https://shorturl.at/dizD9">
             Download Resume
           </a>
         </div>

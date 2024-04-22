@@ -1,6 +1,7 @@
 import pune from "../../img/projects/puneblog.png"
 import vistro from "../../img/projects/vistro.png"
 import ranagan from "../../img/projects/ranagan.png"
+import chatwave from "../../img/projects/chatwave.png"
 import portfolio from "../../img/projects/portfolio.png"
 import todo from "../../img/projects/to-do-app.png"
 import passMana from "../../img/projects/pass-mana.png"
@@ -18,10 +19,17 @@ const Data = [
     },
     {
         "name" : "Ranangan",
-        "link" : "https://github.com/vineet1401/",
+        "link" : "https://ranangan.onrender.com",
         "description" : "Node.js Sport Management System for College Annual Event - This GitHub repository houses a dynamic web application developed in Node.js, designed to streamline and enhance the management of sports activities within our college's annual event, 'Ranagan.' The system facilitates efficient organization, scheduling, and coordination of various sports",
         "stack": " HTML, CSS, JavaScript, MongoDb, NodeJs, JWT, ExpressJs, EJS, API",
         "icon": ranagan
+    },
+    {
+        "name" : "Chat Waves",
+        "link" : "https://wechat-fpps.onrender.com/",
+        "description" : "Chat Waves is a real-time chat application built using the MERN stack (MongoDB, Express.js, React.js, Node.js) with Socket.IO for instant messaging. Users can create accounts, join chat rooms, and engage in conversations with others in real-time. The application provides a seamless and intuitive user experience, with responsive design and real-time updates for an immersive chat experience.",
+        "stack": " HTML, CSS, JavaScript, MongoDb, NodeJs, JWT, ExpressJs, EJS, API, Reactjs, Socket.io",
+        "icon": chatwave
     },
     {
         "name" : "Pune Blog",
