@@ -60,11 +60,6 @@ const About = () => {
               </Link>
             </span>
           </p>
-          <a
-            className="button"
-            href="https://shorturl.at/dizD9">
-            Download Resume
-          </a>
         </div>
       </div>
     </>

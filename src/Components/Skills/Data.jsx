@@ -5,6 +5,11 @@ const Data = [
         "icon": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png"
     },
     {
+        "name": "ReactJS",
+        "type": "Front End",
+        "icon": "https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png"
+    },
+    {
         "name": "ExpressJS",
         "type": "Back End",
         "icon": "https://img.icons8.com/fluency/48/000000/node-js.png"
@@ -25,7 +30,7 @@ const Data = [
         "icon": "https://img.icons8.com/color/48/000000/chakra-ui.png"
     },
     {
-        "name": "TailwindCSS",
+        "name": "Tailwind UI",
         "type": "Front End",
         "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/48px-Tailwind_CSS_Logo.png"
     },
